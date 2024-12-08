@@ -1,0 +1,35 @@
+.horizontal-nav {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    gap: 1rem; /* Spacing between items */
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #d6d5d5; /* Optional bottom border */
+}
+
+.nav-item {
+    list-style: none; /* Remove default list styling */
+}
+
+.nav-link {
+    color: #000; /* Default link color */
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Clickable area padding */
+    border-radius: 0.25rem; /* Rounded corners for hover effect */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+    .nav-link:hover {
+        background-color: #eaeaea; /* Light gray background on hover */
+        text-decoration: none;
+    }
+
+/* Ensure the navigation stays horizontal on smaller screens */
+@media (max-width: 640.98px) {
+    .horizontal-nav {
+        flex-direction: row;
+        flex-wrap: wrap; /* Wrap items if space is tight */
+        justify-content: center; /* Center items for smaller screens */
+    }
+}
